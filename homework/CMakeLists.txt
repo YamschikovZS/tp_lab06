@@ -23,13 +23,6 @@ add_library(solver_lib STATIC
 )
 target_include_directories(solver_lib PUBLIC solver_lib)
 
-target_compile_definitions(solver_lib PRIVATE
-    _USE_MATH_DEFINES
-)
-target_compile_options(solver_lib PRIVATE
-    -include cmath
-)
-
 add_executable(solver
     solver_application/equation.cpp
 )
