@@ -106,7 +106,7 @@ jobs:
         run: |
           cd homework/_build
           cpack -G WIX -C Release
-          mkdir -p ../../artifacts
+          mkdir -Force ../../artifacts
           move *.msi ../../artifacts/
 
       - name: Upload MSI artifact
